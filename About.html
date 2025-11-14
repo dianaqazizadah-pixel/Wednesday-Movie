@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Wednesday Vibe</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+   <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+/* navbar */
+body {
+      font-family: 'Cinzel', serif;
+      background-color: #0B0B0B;
+      color: #EAEAEA;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(10, 10, 10, 0.473);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar-brand {
+      color: #9b5de5;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-left: 20px;
+    }
+
+    .active{
+     color: #ca44ff !important;
+     border-radius: 10px;
+
+    }
+
+    .navbar-nav .nav-link {
+      color: #EAEAEA;
+      font-weight: 700;
+      margin-right: 0px;
+      transition: color 0.3s ease;
+      padding: 0px 20px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #9b5de5;
+    }
+
+    .dropdown-menu {
+      border: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: transparent;
+      color: #9b5de5 !important;
+    }
+
+    /* part 1 */
+    body {
+      background-color: #000;
+      color: #e0e0e0;
+      font-family: 'Roboto', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h3 {
+      font-family: 'Cinzel', serif;
+      color: #cbb1ff;
+      text-shadow: 0 0 10px rgba(140, 100, 255, 0.3);
+    }
+
+    .section-1 {
+      padding: 80px 0;
+      background: linear-gradient(180deg, #000 0%, #0a0015 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* fog effect */
+    .section-1::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 800px;
+      background: url('../porject-bootstrap.5/photo_2025-11-13_05-03-14.jpg') repeat-x;
+      opacity: 0.25;
+      animation: fog 60s linear infinite;
+    }
+
+    @keyframes fog {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .contant {
+      background-color: rgba(10, 10, 10, 0.85);
+      padding: 30px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border: 1px solid #444;
+      box-shadow: 0 0 30px rgba(128, 0, 128, 0.3);
+      transition: all 0.4s ease;
+      position: relative;
+      z-index: 2;
+      height: 400px;
+    }
+
+    .contant:hover {
+      box-shadow: 0 0 40px rgba(180, 0, 255, 0.5);
+      transform: translateY(-6px);
+    }
+
+    .btn-light {
+      background-color: #b39ddb;
+      color: #000;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn-light:hover {
+      background-color: #6a1b9a;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Slider */
+    .carousel-inner img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover;
+      filter: brightness(65%) contrast(90%) saturate(90%);
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      padding: 10px 15px;
+      backdrop-filter: blur(4px);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-inner img {
+        height: 45vh;
+      }
+
+      .contant {
+        text-align: center;
+      }
+    }
+
+
+    /* part 2 */
+
+    @keyframes fog2 {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+      }
+  
+      .mystery-text {
+        position: relative;
+        z-index: 2;
+        color: #d1c4e9;
+        font-family: 'Cinzel', serif;
+        text-align: center;
+        padding: 80px 20px;
+      }
+  
+      .mystery-text h2 {
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        color: #cbb1ff;
+        text-shadow: 0 0 10px rgba(160, 130, 255, 0.5);
+      }
+  
+      .mystery-text p {
+        max-width: 700px;
+        margin: 20px auto;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #d6d6d6;
+      }
+  
+      .mystery-btn {
+        background-color: #6a1b9a;
+        border: none;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 25px;
+        border-radius: 30px;
+        transition: 0.3s;
+        box-shadow: 0 0 15px rgba(155, 0, 255, 0.4);
+      }
+  
+      .mystery-btn:hover {
+        background-color: #9c27b0;
+        box-shadow: 0 0 25px rgba(200, 100, 255, 0.7);
+        transform: scale(1.08);
+      }
+  
+      .mystery-gallery {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 15px 80px;
+      }
+  
+      .mystery-gallery img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: 0.5s;
+        filter: brightness(70%) contrast(90%);
+        border: 1px solid #444;
+        box-shadow: 0 0 25px rgba(120, 0, 200, 0.4);
+      }
+  
+      .mystery-gallery img:hover {
+        transform: scale(1.05) rotate(-1deg);
+        filter: brightness(100%);
+        box-shadow: 0 0 35px rgba(62, 30, 80, 0.7);
+      }
+  
+      @media (max-width: 768px) {
+        .mystery-gallery img {
+          width: 90%;
+          height: auto;
+        }
+  
+        .mystery-text h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      /* psrt 3 */
+
+       /* ✦ CURSED SECTION ✦ */
+  .cursed-section {
+    position: relative;
+    background: radial-gradient(circle at center, #050008 0%, #000 100%);
+    color: #e0e0e0;
+    overflow: hidden;
+  }
+  
+  /* افکت مه تاریک */
+  .cursed-section .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 200%; height:100vh;
+    background: url('../porject-bootstrap.5/photo_2025-11-13_05-05-28.jpg') repeat-x;
+    opacity: 0.25;
+    animation: fogMove 80s linear infinite;
+  }
+  
+  @keyframes fogMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  
+  /* افکت صاعقه */
+  .lightning {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 40% 20%, rgba(94, 3, 102, 0.25) 0%, transparent 70%);
+    opacity: 0;
+    animation: lightningFlash 8s infinite ease-in-out;
+  }
+  
+  @keyframes lightningFlash {
+    0%, 97%, 100% { opacity: 0; }
+    98% { opacity: 0.4; }
+    99% { opacity: 0.15; }
+  }
+  
+  /* ✦ Text Section ✦ */
+  .text-section {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+  }
+  
+  .text-section h2 {
+    font-family: 'Cinzel', serif;
+    color: #cbb1ff;
+    font-size: 2.6rem;
+    text-shadow: 0 0 25px rgba(170, 120, 255, 0.6);
+  }
+  
+  .text-section .subtitle {
+    color: #b39ddb;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .text-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #d8d8d8;
+  }
+  
+  /* ✦ Button ✦ */
+  .mystery-btn {
+    background: linear-gradient(135deg, #7b1fa2, #4a148c);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(160, 100, 255, 0.5);
+  }
+  
+  .mystery-btn:hover {
+    box-shadow: 0 0 30px rgba(200, 150, 255, 0.7);
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #9c27b0, #6a1b9a);
+  }
+  
+  /* ✦ Gallery ✦ */
+  .cursed-gallery {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .cursed-gallery .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid rgba(120, 0, 200, 0.4);
+    box-shadow: 0 0 20px rgba(160, 100, 255, 0.3);
+    transition: all 0.4s ease;
+  }
+  
+  .cursed-gallery img {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    filter: brightness(70%) contrast(95%);
+    transition: 0.4s ease;
+  }
+  
+  .cursed-gallery .gallery-item:hover img {
+    transform: scale(1.07);
+    filter: brightness(100%) contrast(105%);
+    box-shadow: 0 0 35px rgba(200, 150, 255, 0.8);
+  }
+  
+  /* ✦ Responsive ✦ */
+  @media (max-width: 992px) {
+    .text-section {
+      text-align: center;
+    }
+  
+    .cursed-gallery {
+        padding: 0px 10px;
+      background-color: #14002c60;
+    
+
+    }
+  
+    .cursed-gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+  
+  }
+
+
+  /* part 4 */
+
+
+body {
+ 
+  font-family: 'Roboto', sans-serif;
+  color: #eaeaea;
+  overflow-x: hidden;
+}
+
+/* بخش سینمایی کامل */
+section.about-cinematic {
+  position: relative;
+  /* background: linear-gradient(180deg, #050005 0%, #0a0016 100%); */
+  padding: 120px 0;
+  overflow: hidden;
+  height: 900px;
+}
+
+/* باران متحرک واقعی */
+/* .rain {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+   background: url('https://i.imgur.com/7WkG0fS.png') repeat; 
+  opacity: 0.05;
+  pointer-events: none;
+  animation: rainMove 5s linear infinite;
+  z-index: 0;
+} */
+@keyframes rainMove {
+  from {background-position: 0 0;}
+  to {background-position: 0 100%;}
+}
+
+/* دود بنفش ملایم */
+/* section.about-cinematic::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+   background: url('../') repeat; 
+  opacity: 0.1;
+  animation: smokeMove 30s linear infinite;
+  z-index: 1;
+} */
+@keyframes smokeMove {
+  from {background-position: 0 0;}
+  to {background-position: 1000px 0;}
+}
+
+/* عنوان اصلی */
+.about-cinematic .section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: #bfa2ff;
+  text-align: center;
+  text-shadow: 0 0 25px rgba(180,90,255,0.6);
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+/* کارت ها */
+.card-dark {
+    background: radial-gradient(circle at top, #251625, #050505);
+  border: 1px solid rgba(138,43,226,0.2);
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  position: relative;
+  box-shadow: 0 0 20px rgba(138,43,226,0.15);
+  z-index: 2;
+}
+
+.card-dark::after {
+  content: "";
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(138,43,226,0.4) 0%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: rotate(0deg);
+  z-index: 2;
+}
+
+.card-dark:hover::after {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+
+.card-dark:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px rgba(138,43,226,0.35);
+}
+
+.card-dark img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(70%) contrast(110%);
+  transition: 0.6s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card-dark:hover img {
+  filter: brightness(100%) contrast(120%) saturate(130%);
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-body h4 {
+  color: #cbb5ff;
+  font-family: 'Cinzel', serif;
+  margin-bottom: 15px;
+}
+
+.card-body p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.btn-glow {
+  background: transparent;
+  border: 1px solid #8a2be2;
+  color: #8a2be2;
+  border-radius: 30px;
+  padding: 8px 22px;
+  transition: 0.3s ease;
+}
+
+.btn-glow:hover {
+  background: #8a2be2;
+  color: #fff;
+  box-shadow: 0 0 20px #8a2be2;
+}
+
+@media (max-width: 768px) {
+  .section-title { font-size: 2.2rem; }
+  .card-body p { font-size: 0.95rem; }
+  section.about-cinematic {min-height: 280vh;}
+  /* .card-dark {height: 100%;} */
+}
+
+
+/* footer */
+
+body {
+    margin: 0;
+   
+    color: #e6e6e6;
+    font-family: 'Crimson Text', serif;
+  }
+
+  footer {
+    background: radial-gradient(circle at top, #181218, #050505);
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(178,138,255,0.2);
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(178,138,255,0.1), transparent 70%);
+    z-index: 0;
+  }
+
+  footer h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #b28aff;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 15px rgba(178,138,255,0.6);
+  }
+
+  footer p {
+    color: #ccc;
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-links a {
+    color: #b28aff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #b28aff;
+    transition: width 0.3s ease;
+  }
+
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(178,138,255,0.8);
+  }
+
+  .scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #1e0b2b;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(178,138,255,0.5);
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 999;
+  }
+
+  .scroll-top:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(178,138,255,0.9);
+  }
+
+  footer .credits {
+    margin-top: 40px;
+    color: #888;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    footer h2 { font-size: 24px; }
+    footer p { font-size: 13px; }
+    .footer-links { flex-direction: column; gap: 12px; }
+  } 
+
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="container-fluid navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+    <div class="row justify-content-between">
+       <div class="col-lg-4 col-12 mx-5">
+           <a class="navbar-brand mx-3" href="#">Wednesday</a>
+           <button class="navbar-toggler" style="margin-left: 100px;" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+             <span class="navbar-toggler-icon "></span>
+           </button>
+       </div>
+
+       <div class="col-lg-4 col-12">
+           <div class="collapse navbar-collapse " id="navMenu">
+               <ul class="navbar-nav ms-auto text-center mx-5">
+       
+       
+       <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                 <li class="nav-item">
+              <a class="nav-link active" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="servis.html">Services</a>
+              </li>
+       
+               
+           <li class="nav-item">
+            <a class="nav-link " href="blog.html">Blog</a>
+          </li>
+       
+          <li class="nav-item">
+            <a class="nav-link " href="Riting.html">Rating</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="Pricing.html">Pricing</a></li>
+              <li><a class="dropdown-item text-light" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item text-light " href="serial.html">Team</a></li>
+              <li><a class="dropdown-item text-light" href="contct.html">Contact</a></li>
+            </ul>
+          </li>
+               </ul>
+             </div>
+       </div>
+
+    </div>
+ </nav>
+
+    <!-- part 1 -->
+  <!-- ABOUT (Wednesday Dark Vibe) -->
+  <section class="section-1">
+    <h1 class="text-center mb-4">ABOUT Wednesday</h1>
+
+    <div class="container mt-5">
+      <div class="row gy-5 gx-0 align-items-center">
+        <!-- Text -->
+        <div class="col-lg-6">
+          <div class="contant">
+            <h3 class="fw-bold mb-3">History of Wednesday</h3>
+            <p>
+              From ancient obsidian necklaces to cursed amulets of royalty, jewelry has always held power —
+              not just beauty. It carries secrets, bloodlines, and unspoken oaths. In the shadowed halls of Nevermore,
+              even a simple pendant can whisper a dark truth.
+            </p>
+            <button class="btn btn-light mt-3">Read More</button>
+          </div>
+        </div>
+
+        <!-- Wednesday Slider -->
+        <div class="col-lg-6">
+          <div id="wednesdaySlider" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4 shadow-lg">
+              <div class="carousel-item active">
+                <img src="../porject-bootstrap.5/photo_2025-11-10_03-05-54.jpg" alt="Wednesday Addams" class="d-block w-100" />
+              </div>
+              <div class="carousel-item">
+                <img src="../porject-bootstrap.5/photo_2025-11-10_03-06-28.jpg" alt="Nevermore Academy" class="d-block w-100" />
+              </div>
+
+
+<div class="carousel-item">
+                <img src="../porject-bootstrap.5/photo_2025-11-13_05-03-05.jpg" alt="Thing on Table" class="d-block w-100" />
+              </div>
+              <div class="carousel-item">
+                <img src="../porject-bootstrap.5/photo_2025-11-13_05-03-11.jpg" alt="Wednesday and Enid" class="d-block w-100" />
+              </div>
+              <div class="carousel-item">
+                <img src="../porject-bootstrap.5/photo_2025-11-09_04-21-12.jpg" alt="Dark Forest Scene" class="d-block w-100" />
+              </div>
+              <div class="carousel-item">
+                <img src="../porject-bootstrap.5/photo_2025-11-09_04-21-08.jpg" alt="Wednesday in Dance Scene" class="d-block w-100" />
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#wednesdaySlider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wednesdaySlider" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- part 2 -->
+  <!-- SECTION 2: THE MYSTERY BEHIND THE DESIGNS -->
+<section style="position: relative; background: radial-gradient(circle at center, #0a0015 0%, #000 100%); overflow: hidden;">
+
+    <!-- مه بنفش -->
+    <!-- <div style="
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('../porject-bootstrap.5/photo_2025-11-09_04-00-52.jpg') repeat-x;
+      opacity: 0.3;
+      animation: fog2 70s linear infinite;
+      z-index: 1;
+    "></div>
+   -->
+  
+    <div class="mystery-text">
+      <h2>THE MYSTERY BEHIND THE DESIGNS</h2>
+      <p>
+        Every curve, every stone, and every shadow hides a story. Inspired by the world of Nevermore,
+        these designs carry whispers of forbidden love, dark secrets, and eternal elegance.
+        Each piece is said to be bound by the moon — and blessed by something far older than time itself.
+      </p>
+      <button class="mystery-btn mt-3">Unveil the Secret</button>
+    </div>
+  
+    <!-- تصاویر مرموز -->
+    <div class="mystery-gallery">
+      <img src="../porject-bootstrap.5/photo_2025-11-13_05-02-59.jpg" alt="Dark Jewelry" />
+      <img src="../porject-bootstrap.5/photo_2025-11-10_02-42-13.jpg" alt="Nevermore Castle" />
+      <img src="../porject-bootstrap.5/photo_2025-11-13_05-02-49.jpg" alt="Mystical Gem" />
+      <img src="../porject-bootstrap.5/photo_2025-11-13_05-03-02.jpg" alt="Wednesday Silhouette" />
+      <img src="../porject-bootstrap.5/photo_2025-11-10_02-42-10.jpg" alt="Dark Aesthetic" />
+      <img src="../porject-bootstrap.5/photo_2025-11-09_04-21-40.jpg" alt="Enchanted Design" />
+      <img src="../porject-bootstrap.5/photo_2025-11-10_02-42-01.jpg" alt="Dark Aesthetic" />
+      <img src="../porject-bootstrap.5/photo_2025-11-10_02-29-51.jpg" alt="Enchanted Design" />
+    </div>
+  
+  </section>
+
+
+  <!-- part 3 -->
+  <!-- SECTION 3: CURSED ELEGANCE -->
+<section class="cursed-section">
+    <div class="overlay"></div>
+    <div class="lightning"></div>
+  
+    <div class="container py-5 position-relative">
+      <div class="row align-items-center">
+        <!-- Text -->
+        <div class="col-lg-6 text-section">
+          <h2>Cursed Elegance</h2>
+          <h5 class="subtitle">The Power Within the Gems ⚡️</h5>
+          <p>
+            Legends say that some jewels hold more than beauty — they hold souls.
+            Forged in shadow and moonlight, each gem hums with forbidden energy.
+            The Addams ancestors believed wearing such stones could grant
+            strength, wisdom, or madness.  
+            <br><br>
+           
+          </p>
+          <button class="mystery-btn">Explore the Power</button>
+        </div>
+  
+        <!-- Gallery -->
+        <div class="col-lg-6 cursed-gallery">
+          <div class="gallery-item"><img src="../porject-bootstrap.5/photo_2025-11-13_05-05-20.jpg" alt="Cursed Gem 1" /></div>
+          <div class="gallery-item"><img src="../porject-bootstrap.5/photo_2025-11-13_05-05-25.jpg" alt="Cursed Gem 2" /></div>
+          <div class="gallery-item"><img src="../porject-bootstrap.5/photo_2025-11-13_05-05-17.jpg" alt="Cursed Gem 3" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- part 4 -->
+  <section class="about-cinematic" id="about4">
+    <div class="rain"></div> <!-- لایه باران -->
+    <h2 class="section-title" data-aos="fade-down" data-aos-duration="1200">Secrets of Nevermore</h2>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="1200">
+            <div class="card-dark">
+                <img src="../porject-bootstrap.5/photo_2025-11-13_05-05-39.jpg" alt="Wednesday Addams">
+                <div class="card-body">
+                  <h4>The Forbidden Room</h4>
+                  <p>Behind the locked doors of Nevermore lies a secret lab where forbidden experiments blur magic and madness.</p>
+                  <button class="btn btn-glow mt-3">Read More</button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1200">
+              <div class="card-dark">
+                <img src="../porject-bootstrap.5/photo_2025-11-13_05-05-22.jpg" alt="Shadow Library">
+                <div class="card-body">
+                  <h4>The Shadow Library</h4>
+                  <p>Books whisper, ink moves — in the library of shadows, every page tells a truth too dark for daylight.</p>
+                  <button class="btn btn-glow mt-3">Read More</button>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mx-auto" data-aos="fade-left" data-aos-duration="1200">
+              <div class="card-dark">
+                <img src="../porject-bootstrap.5/photo_2025-11-13_05-05-30.jpg" alt="Raven Scene">
+                <div class="card-body">
+                  <h4>The Raven’s Curse</h4>
+                  <p>Legend says the raven spirit guards Wednesday’s fate, whispering secrets from the moonlight shadows.</p>
+                  <button class="btn btn-glow mt-3">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- صدای محیطی تاریک -->
+      <audio autoplay loop>
+        <source src="https://freesound.org/data/previews/457/457619_5121236-lq.mp3" type="audio/mpeg">
+      </audio>
+
+
+      <!-- footer -->
+
+      <footer >
+        <h2>Nevermore Academy</h2>
+        <p>Step into the haunting halls of Nevermore, where Wednesday Addams sharpens her wit and uncovers dark secrets.  
+           Explore the world beyond the ordinary — mysterious, elegant, and delightfully morbid.</p>
+      
+        <div class="footer-links">
+          <a href="#">Episodes</a>
+          <a href="#">Cast & Crew</a>
+          <a href="#">Dark Gallery</a>
+          <a href="#">Behind the Shadows</a>
+          <a href="#">Merch</a>
+        </div>
+        <br>
+        <br>
+        <br>
+      <hr>
+        <div class="credits">© 2025 Wednesday Universe | Designed by Diana Qazizadah</div>
+      </footer>
+    
+      <button class="scroll-top" id="scrollTopBtn"><b>🕷️</b></button>
+      
+      <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+      
+        window.onscroll = function() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollBtn.style.display = "block";
+          } else {
+            scrollBtn.style.display = "none";
+          }
+        };
+      
+        scrollBtn.onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+      </script>
+      
+      <!-- Bootstrap + AOS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+      AOS.init({ once:true, offset:120, duration:1000 });
+      </script>
+</body>
+</html>
