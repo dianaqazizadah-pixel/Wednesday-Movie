@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wednesday Services</title>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="single-job2-wednesday.css">
+<style>
+        /* navbar */
+
+body {
+      font-family: 'Cinzel', serif;
+      background-color: #0B0B0B;
+      color: #EAEAEA;
+      overflow-x: hidden;
+      margin: 0 !important;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(10, 10, 10, 0.473);
+      backdrop-filter: blur(10px);
+     border-bottom:3px solid  #9b5de5;
+    }
+
+    .navbar-brand {
+      color: #9b5de5;
+      font-size: 1.5rem;
+      font-weight: 650;
+      letter-spacing: 1px;
+      margin-left: 20px;
+    }
+
+    .active{
+     color: #ca44ff !important;
+     border-radius: 10px;
+
+    }
+
+    .navbar-nav .nav-link {
+      color: #EAEAEA;
+      font-weight: 700;
+      margin-right: 0px;
+      transition: color 0.3s ease;
+      padding: 0px 20px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #9b5de5;
+    }
+
+    .dropdown-menu {
+      border: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: transparent;
+      color: #9b5de5 !important;
+    }
+@import url('https://fonts.bunny.net/css?family=cutive:400');
+
+body {
+  margin: 0;
+  font-family: 'Cutive', serif;
+  background-color: #121212;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ---------------- Background Spider Web ---------------- */
+.services-section {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  overflow: hidden;
+  background: #121212;
+}
+
+.services-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255,0,115,0.05), transparent 70%);
+  z-index: 0;
+}
+
+.web {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 400%;
+  height: 500%;
+  background: url('../porject-bootstrap.5/photo_2025-11-13_05-04-25.jpg') ;
+  opacity: 0.05;
+  animation: rotateWeb 100s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateWeb {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ---------------- Title ---------------- */
+.services-title {
+  position: relative;
+  z-index: 1;
+  font-size: 3rem;
+  margin-bottom: 80px;
+  color: #9b5de5;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px #642091;
+}
+
+/* ---------------- Cards ---------------- */
+.services-content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 30px auto;
+  perspective: 1000px;
+}
+
+.service-card {
+  background-color: #1f1f1f;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(140, 0, 255, 0.2);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) translateY(50px);
+  opacity: 0;
+  position: relative;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px dashed #8600df;
+  border-radius: 15px;
+  opacity: 0.2;
+}
+
+.service-card.show {
+  transform: rotateY(0deg) translateY(0);
+  opacity: 1;
+}
+
+.service-card:hover {
+  transform: rotateY(15deg) translateY(-10px);
+  box-shadow: 0 0 40px #7b079e;
+}
+
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #8c02b6;
+  transition: transform 0.5s;
+}
+
+.service-card:hover .service-icon {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.service-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+  text-shadow: 0 0 8px #8f1bd3d8;
+}
+
+.service-desc {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 90px 10px;
+  }
+  .service-card {
+    padding: 25px 15px;
+  }
+  .services-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+}
+
+
+/* footer */
+
+body {
+    margin: 0;
+   
+    color: #e6e6e6;
+    font-family: 'Crimson Text', serif;
+  }
+
+  footer {
+    background: radial-gradient(circle at top, #181218, #050505);
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(178,138,255,0.2);
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(178,138,255,0.1), transparent 70%);
+    z-index: 0;
+  }
+
+  footer h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #b28aff;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 15px rgba(178,138,255,0.6);
+  }
+
+  footer p {
+    color: #ccc;
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-links a {
+    color: #b28aff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #b28aff;
+    transition: width 0.3s ease;
+  }
+
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(178,138,255,0.8);
+  }
+
+  .scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #1e0b2b;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(178,138,255,0.5);
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 999;
+  }
+
+  .scroll-top:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(178,138,255,0.9);
+  }
+
+  footer .credits {
+    margin-top: 40px;
+    color: #888;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    footer h2 { font-size: 24px; }
+    footer p { font-size: 13px; }
+    .footer-links { flex-direction: column; gap: 12px; }
+  } 
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="container-fluid navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+    <div class="row justify-content-between">
+       <div class="col-lg-4 col-12 mx-5">
+           <a class="navbar-brand mx-3" href="#">Wednesday</a>
+           <button class="navbar-toggler" style="margin-left: 100px;" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+             <span class="navbar-toggler-icon "></span>
+           </button>
+       </div>
+
+       <div class="col-lg-4 col-12">
+           <div class="collapse navbar-collapse " id="navMenu">
+               <ul class="navbar-nav ms-auto text-center mx-5">
+       
+       
+       <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+                 <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  active" href="servis.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="blog.html">Blog</a>
+              </li>
+       
+              
+              <li class="nav-item">
+                <a class="nav-link " href="Riting.html">Rating</a>
+              </li>
+       
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item text-light" href="Pricing.html">Pricing</a></li>
+                  <li><a class="dropdown-item text-light" href="FAQ.html">FAQ</a></li>
+                  <li><a class="dropdown-item text-light " href="serial.html">Team</a></li>
+                  <li><a class="dropdown-item text-light" href="contct.html">Contact</a></li>
+                </ul>
+              </li>
+               </ul>
+             </div>
+       </div>
+
+    </div>
+ </nav>
+<section class="services-section">
+  <div class="web"></div>
+  <h2 class="services-title">Our Services</h2>
+  <div class="services-content">
+    <div class="service-card">
+      <i class="fas fa-spider service-icon"></i>
+      <h3 class="service-title">Dark Magic</h3>
+      <p class="service-desc">Explore hidden arts and dark magic with the gothic style of Wednesday series.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-scroll service-icon"></i>
+      <h3 class="service-title">Mysterious Investigations</h3>
+      <p class="service-desc">Analyze mysterious cases and secrets of Nevermore Academy with precision and thrill.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-mask service-icon"></i>
+      <h3 class="service-title">Identity & Secrets</h3>
+      <p class="service-desc">Uncover hidden identities and secret codes with Wednesday’s sharp and cunning vision.</p>
+    </div>
+  </div>
+
+  <div class="services-content">
+    <div class="service-card mt-5">
+      <i class="fas fa-magic service-icon"></i>
+      <h3 class="service-title">Witchcraft Lessons</h3>
+      <p class="service-desc">Explore hidden arts and dark magic with the gothic style of Wednesday series.</p>
+    </div>
+    <div class="service-card mt-5">
+      <i class="fas fa-user-secret service-icon"></i>
+      <h3 class="service-title">Secret Society</h3>
+      <p class="service-desc">Join exclusive mysterious circles with hidden rituals and codes.</p>
+    </div>
+    <div class="service-card mt-5">
+      <i class="fas fa-ghost service-icon"></i>
+      <h3 class="service-title">Paranormal Investigations</h3>
+      <p class="service-desc">Investigate haunted places and supernatural events like Wednesday.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <h2>Nevermore Academy</h2>
+    <p>Step into the haunting halls of Nevermore, where Wednesday Addams sharpens her wit and uncovers dark secrets.  
+       Explore the world beyond the ordinary — mysterious, elegant, and delightfully morbid.</p>
+  
+    <div class="footer-links">
+      <a href="#">Episodes</a>
+      <a href="#">Cast & Crew</a>
+      <a href="#">Dark Gallery</a>
+      <a href="#">Behind the Shadows</a>
+      <a href="#">Merch</a>
+    </div>
+    <br>
+    <br>
+    <br>
+  <hr>
+    <div class="credits">© 2025 Wednesday Universe | Designed by Diana Qazizadah</div>
+  </footer>
+  
+  <button class="scroll-top" id="scrollTopBtn"><b>🕷️</b></button>
+  
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+  
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+  
+    scrollBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  
+  
+
+  
+
+<script>
+  const cards = document.querySelectorAll('.service-card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.3 });
+
+  cards.forEach(card => observer.observe(card));
+</script>
+
+
+<script>
+    const cards2 = document.querySelectorAll('.service-card-2');
+  
+    const observer2 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.3 });
+  
+    cards2.forEach(card => observer2.observe(card));
+  </script> 
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
