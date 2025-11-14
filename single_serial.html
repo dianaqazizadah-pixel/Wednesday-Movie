@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Team Member — Wednesday Style (Single Job 2)</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="single-job2-wednesday.css">
+</head>
+<style>
+    /* navbar */
+
+body {
+      font-family: 'Cinzel', serif;
+      background-color: #0B0B0B;
+      color: #EAEAEA;
+      overflow-x: hidden;
+      margin: 0 !important;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: rgba(10, 10, 10, 0.473);
+      backdrop-filter: blur(10px);
+     border-bottom:3px solid  #9b5de5;
+    }
+
+    .navbar-brand {
+      color: #9b5de5;
+      font-size: 1.5rem;
+      font-weight: 650;
+      letter-spacing: 1px;
+      margin-left: 20px;
+    }
+
+    .active{
+     color: #ca44ff !important;
+     border-radius: 10px;
+
+    }
+
+    .navbar-nav .nav-link {
+      color: #EAEAEA;
+      font-weight: 700;
+      margin-right: 0px;
+      transition: color 0.3s ease;
+      padding: 0px 20px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #9b5de5;
+    }
+
+    .dropdown-menu {
+      border: none;
+    }
+
+    .dropdown-item:hover {
+      background-color: transparent;
+      color: #9b5de5 !important;
+    }
+/* Reset / base */
+:root{
+  --bg:#08060a;
+  --panel:#150b18;
+  --muted:#bfb1e6;
+  --accent:#8b44ff;
+  --accent-dark:#6a0dad;
+  --glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg) 0%, #050406 100%);
+  color:#efe9ff;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:350px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  /* margin-bottom:30px; */
+  background-image: url('../porject-bootstrap.5/photo_2025-11-09_04-21-32.jpg'); /* dark Nevermore-ish */
+  background-size:cover;
+  background-position:center;
+  overflow: hidden;
+}
+.hero-overlay{
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(11,3,20,0.6), rgba(6,3,10,0.8));
+  backdrop-filter: blur(2px);
+}
+.hero-content{ position:relative; z-index:2; padding:40px 15px; }
+.hero-title{
+  font-family: "Cinzel", serif;
+  font-size:2.1rem;
+  margin:0;
+  color:var(--accent);
+  text-shadow:0 6px 30px rgba(107,41,207,0.15);
+}
+.hero-sub{
+  color:var(--muted);
+  margin:6px 0 0;
+  font-weight:300;
+}
+.btn-ghost{
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,0.06);
+  background:transparent;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  transition:all .2s;
+}
+.btn-ghost:hover{ transform:translateY(-3px); box-shadow:0 6px 20px rgba(106,13,173,0.12) }
+
+/* Main Cards */
+.main-card{ background: linear-gradient(180deg, rgba(24,12,28,0.95), rgba(12,8,16,0.95)); border-radius:12px; border:1px solid rgba(255,255,255,0.03); }
+.profile-lg{ width:110px; height:110px; object-fit:cover; border-radius:14px; border:3px solid rgba(138,84,220,0.35); box-shadow:0 6px 24px rgba(107,41,207,0.12); }
+
+/* divider */
+.divider{ border:0; height:1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent); margin:12px 0; }
+
+/* text */
+.section-heading{ color:var(--muted); font-size:1rem; margin-bottom:8px; font-weight:600; }
+.lead-text{ color:#dfd7ff; font-size:0.95rem; line-height:1.6 }
+
+/* small creator cards */
+.small-card{
+  background: linear-gradient(180deg, rgba(24,12,28,0.7), rgba(10,6,12,0.7));
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.03);
+  align-items:center;
+}
+.small-card img{ width:64px; height:64px; object-fit:cover; border-radius:8px; border:2px solid rgba(138,84,220,0.18); }
+
+/* sidebar */
+.sidebar-card{
+  background: linear-gradient(180deg, rgba(18,8,20,0.9), rgba(8,3,10,0.9));
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 6px 24px rgba(107,41,207,0.06);
+}
+.details li{ padding:6px 0; color:var(--muted); }
+.btn-cta{
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+}
+.btn-cta:hover{ transform:translateY(-3px); box-shadow:0 10px 30px rgba(107,41,207,0.2) }
+
+/* links */
+.contact-link{ color: #cdb7ff; text-decoration:none; }
+.contact-link:hover{ text-decoration:underline }
+
+/* Gallery imgs */
+.gallery-img{ width:100%; height:110px; object-fit:cover; border-radius:8px; border:2px solid rgba(255,255,255,0.02) }
+
+/* RESPONSIVE tweaks */
+@media (max-width: 992px) {
+  .hero{ min-height:160px }
+  .hero-content{ padding:30px 10px }
+  .profile-lg{ width:95px; height:95px }
+}
+@media (max-width: 768px) {
+  .hero{ height:340px }
+  .hero-title{ font-size:1.6rem }
+  .profile-lg{ width:74px; height:84px }
+  .main-card{ padding:18px }
+  .gallery-img{ height:90px }
+}
+@media (max-width: 576px) {
+  .hero{ min-height:120px; background-position: center 30% }
+  .hero-content{ padding:18px 8px }
+  .hero-title{ font-size:1.4rem }
+  .profile-lg{ width:72px; height:72px; border-radius:10px }
+  .small-card img{ width:56px; height:56px }
+}
+
+/* subtle animated background glow for header */
+@keyframes purplePulse {
+  0% { box-shadow: 0 0 30px rgba(107,41,207,0.06); }
+  50% { box-shadow: 0 0 50px rgba(107,41,207,0.12); }
+  100% { box-shadow: 0 0 30px rgba(107,41,207,0.06); }
+}
+/* .hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background: radial-gradient(600px 200px at 15% 30%, rgba(107,41,207,0.06), transparent 10%),
+              radial-gradient(400px 160px at 85% 60%, rgba(107,41,207,0.03), transparent 8%);
+  animation: purplePulse 6s ease-in-out infinite;
+} */
+
+/* accessibility */
+a[role="button"], .btn-ghost, .btn-cta { cursor:pointer }
+
+
+/* footer */
+body {
+    margin: 0;
+    background-color: #0b0b0b;
+    color: #e6e6e6;
+    font-family: 'Crimson Text', serif;
+  }
+
+  footer {
+    background: radial-gradient(circle at top, #181218, #050505);
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(178,138,255,0.2);
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(178,138,255,0.1), transparent 70%);
+    z-index: 0;
+  } 
+
+  footer h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #b28aff;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 15px rgba(178,138,255,0.6);
+  }
+
+  footer p {
+    color: #ccc;
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-links a {
+    color: #b28aff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #b28aff;
+    transition: width 0.3s ease;
+  }
+
+  .footer-links a:hover::after {
+    width: 100%;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(178,138,255,0.8);
+  }
+
+  .scroll-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #1e0b2b;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(178,138,255,0.5);
+    transition: all 0.3s ease;
+    display: none;
+    z-index: 999;
+  }
+
+  .scroll-top:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(178,138,255,0.9);
+  }
+
+  footer .credits {
+    margin-top: 40px;
+    color: #888;
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    footer h2 { font-size: 24px; }
+    footer p { font-size: 13px; }
+    .footer-links { flex-direction: column; gap: 12px; }
+    
+  } 
+</style>
+<body>
+ <!-- Navbar -->
+ <nav class="container-fluid navbar navbar-expand-lg navbar-dark fixed-top ">
+    <div class="row justify-content-between">
+       <div class="col-lg-4 col-12 py-2">
+           <a class="navbar-brand" href="#">Wednesday</a>
+           <button class="navbar-toggler" style="margin-left: 150px;" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+       </div>
+
+       <div class="col-lg-4 col-12 py-2">
+           <div class="collapse navbar-collapse " id="navMenu">
+               <ul class="navbar-nav ms-auto text-center mx-5">
+       
+       
+       <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                 <li class="nav-item">
+                   <a class="nav-link " href="About.html">About</a>
+                 </li>
+                 <li class="nav-item">
+                  <a class="nav-link " href="servis.html">Services</a>
+                </li>
+       
+               
+           <li class="nav-item">
+            <a class="nav-link " href="blog.html">Blog</a>
+          </li>
+              
+
+          <li class="nav-item">
+            <a class="nav-link " href="Riting.html">Rating</a>
+          </li>
+       
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="Pricing.html">Pricing</a></li>
+              <li><a class="dropdown-item text-light" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item text-light " href="serial.html">Team</a></li>
+              <li><a class="dropdown-item text-light" href="contct.html">Contact</a></li>
+            </ul>
+          </li>
+               </ul>
+             </div>
+       </div>
+
+    </div>
+ </nav> 
+ 
+
+ <div style="margin-top: 70px;">
+     <!-- HERO / HEADER -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="hero-title">Jenna Ortega</h1>
+          <p class="hero-sub">Lead Actress — <span>Wednesday Addams</span></p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a href="serial.html" class="btn btn-ghost">← Back to Team</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- LEFT: MAIN CONTENT (like job description) -->
+        <div class="col-lg-8">
+          <section class="card p-4 mb-4 main-card">
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <img style="overflow: hidden;" src="../porject-bootstrap.5/photo_2025-11-09_04-00-40.jpg"
+                   alt="Jenna Ortega" class="profile-lg">
+              <div>
+                <h2 class="mb-1 text-light">Jenna Ortega</h2>
+                <div class="meta text-light">
+                  <span>Age: 22</span> • <span>Nationality: American</span> • <span>Role: Lead Actress</span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="divider">
+
+            <h5 class="section-heading">Biography</h5>
+            <p class="lead-text">
+              Jenna Ortega portrays the mysterious and razor-witted Wednesday Addams at Nevermore Academy. Her performance blends
+              dark humor with subtle vulnerability and reinvigorates the Addams Family legacy for a new generation.
+            </p>
+
+            <h5 class="section-heading mt-4">Notable Contributions</h5>
+            <ul class="list-unstyled lead-text">
+              <li>• Lead performance and character interpretation</li>
+              <li>• Key scenes: Nevermore prom, investigative sequences</li>
+              <li>• Collaborated closely with directors and costume designers</li>
+            </ul>
+
+            <h5 class="section-heading mt-4">Gallery</h5>
+            <div class="row g-2">
+              <div class="col-6 col-md-4">
+                <img class="gallery-img" src="../porject-bootstrap.5/photo_2025-11-09_04-21-19.jpg" alt="Scene 1">
+              </div>
+              <div class="col-6 col-md-4">
+                <img class="gallery-img" src="../porject-bootstrap.5/photo_2025-11-09_04-21-46.jpg" alt="Scene 2">
+              </div>
+              <div class="col-6 col-md-4">
+                <img class="gallery-img" src="../porject-bootstrap.5/photo_2025-11-10_03-05-51.jpg" alt="Scene 3">
+              </div>
+            </div>
+          </section>
+
+          <!-- TEAM CARDS (carousel-like grid similar to Single Job 2's related jobs) -->
+          <section class="card p-4 related-card " style=" background:linear-gradient(180deg, rgba(18, 1, 24, 0.6), rgba(6,3,10,0.8));
+          backdrop-filter: blur(2px); box-shadow: 1px 1px 20px 0px #4e0464b7;">
+            <h5 class="section-heading mb-3">Other Key Creators</h5>
+            <div class="row g-3">
+              <!-- repeat small cards -->
+              <div class="col-md-6">
+                <div class="small-card d-flex align-items-center p-2">
+                  <img src="../porject-bootstrap.5/photo_2025-11-10_03-06-03.jpg" alt="Tim Burton">
+                  <div class="ms-3 text-light">
+                    <strong>Tim Burton</strong>
+
+
+<div class="sm-meta">Director • Age: 66</div>
+                  </div>
+                  <div class="ms-auto">
+                    <a href="serial.html" class="btn btn-sm btn-outline-light">View</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="small-card d-flex align-items-center p-2">
+                  <img src="../porject-bootstrap.5/photo_2025-11-10_03-06-31.jpg">
+                  <div class="ms-3 text-light">
+                    <strong>Catherine Zeta-Jones</strong>
+                    <div class="sm-meta">Morticia • Age: 55</div>
+                  </div>
+                  <div class="ms-auto">
+                    <a href="serial.html" class="btn btn-sm btn-outline-light">View</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="small-card d-flex align-items-center p-2">
+                  <img src="../porject-bootstrap.5/photo_2025-11-09_04-21-08.jpg" alt="Luis Guzmán">
+                  <div class="ms-3 text-light">
+                    <strong>Luis Guzmán</strong>
+                    <div class="sm-meta">Gomez • Age: 68</div>
+                  </div>
+                  <div class="ms-auto">
+                    <a href="serial.html" class="btn btn-sm btn-outline-light">View</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="small-card d-flex align-items-center p-2">
+                  <img src="../porject-bootstrap.5/photo_2025-11-09_04-00-52.jpg" alt="Emma Myers">
+                  <div class="ms-3 text-light">
+                    <strong>Emma Myers</strong>
+                    <div class="sm-meta">Enid • Age: 23</div>
+                  </div>
+                  <div class="ms-auto">
+                    <a href="serial.html" class="btn btn-sm btn-outline-light">View</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="col-lg-4">
+          <div class="card p-3 sidebar-card">
+            <h6 class="mb-3">Profile Details</h6>
+            <ul class="list-unstyled details">
+              <li><strong>Role:</strong> Lead Actress</li>
+              <li><strong>Age:</strong> 22</li>
+              <li><strong>Nationality:</strong> American</li>
+              <li><strong>Agent:</strong> Moonlight Casting</li>
+              <li><strong>Known For:</strong> Nevermore Academy</li>
+            </ul>
+
+            <div class="mt-3 d-grid">
+              <a href="serial.html" class="btn btn-cta">View Full Team</a>
+            </div>
+
+            <hr class="divider my-3">
+
+            <h6 class="mb-2 text-light">Contact</h6>
+            <p class="small muted text-light">For press and inquiries contact the production office.</p>
+            <a class="contact-link" href="mailto:press@nevermore.example">press@nevermore.example</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-5">
+    <h2>Nevermore Academy</h2>
+    <p>Step into the haunting halls of Nevermore, where Wednesday Addams sharpens her wit and uncovers dark secrets.  
+       Explore the world beyond the ordinary — mysterious, elegant, and delightfully morbid.</p>
+  
+    <div class="footer-links">
+      <a href="#">Episodes</a>
+      <a href="#">Cast & Crew</a>
+      <a href="#">Dark Gallery</a>
+      <a href="#">Behind the Shadows</a>
+      <a href="#">Merch</a>
+    </div>
+    <br>
+    <br>
+    <br>
+  <hr>
+    <div class="credits">© 2025 Wednesday Universe | Designed by Diana Qazizadah</div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn"><b>🕷️</b></button>
+  
+  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+  
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+  
+    scrollBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
